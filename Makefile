@@ -12,7 +12,7 @@ bunyon-0.3.tar.bz2:
 	curl -LO http://www.ifarchive.org/if-archive/scott-adams/interpreters/bunyon/bunyon-0.3.tar.bz2
 
 bunyon-0.3: bunyon-0.3.tar.bz2
-	tar fxz bunyon-0.3.tar.bz2
+	bunzip2 -c bunyon-0.3.tar.bz2 | tar fx -
 
 bunyon-0.3/%: files/%
 	cp $< $@
